@@ -9,11 +9,11 @@ Ethan's anomaly detection provides an uniform api for anomaly detection. Here is
 
 ### Overview:
 
-1. Pick a detector type to use by importing it and instantiate it:
+1. Pick a detector type to use by importing it and instantiating it. Config arguments vary by detector. Check init methods for a list.
 ```
 from ethansanomaly.AnomalyDetectors import LSTMAnomalyDetector
 
-lstm_detector = LSTMAnomalyDetector()
+lstm_detector = LSTMAnomalyDetector(sequence_len=250, p_threshold=0.13)
 ```
 2. Train the anomaly detector on nominal data. In this example, the model will be saved to the folder "saved_models/experiment_name/"  
 ```
