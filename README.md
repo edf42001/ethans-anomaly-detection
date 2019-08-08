@@ -36,8 +36,12 @@ All data should be in the form of two-dimensional numpy arrays. The first dimens
 
 ### LSTM Anomaly Detector
 
+*Hundman, Kyle, et al. “Detecting Spacecraft Anomalies Using LSTMs and Nonparametric Dynamic Thresholding.” Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining - KDD '18, 2018*
+
 The LSTM Anomaly Detector uses a Long-Short Term Memory neural network to predict the next data point. Then it looks at the error between the predictions and the actual values and uses a dynamic thresholding algorithm to detect anomalies. Although the input data may have multiple features, the LSTM Anomaly Detector only makes its predictions on the first feature. This helps pinpoint which feature in the data caused the problem. If you want to make predictions on each feature in the data, train multiple LSTM Anomaly Detectors while swapping out which feature is first.    
 
 ### Kernel PCA Anomaly Detector
+
+*Fujimaki, Ryohei, et al. “An Approach to Spacecraft Anomaly Detection Problem Using Kernel Feature Space.” Proceeding of the Eleventh ACM SIGKDD International Conference on Knowledge Discovery in Data Mining - KDD '05, 2005*
 
 The Kernel PCA Anomaly Detector uses the fact that there are relationships between different features in the data. By using a high-dimensional kernel, it extracts these relationships in the training data and looks for deviations from these relationships in the testing data. It defines as an anomaly as anything that deviates three sigmas above the average. This detector does not care how the features are ordered, but as such it can not tell you exactly which feature caused the anomaly. 
