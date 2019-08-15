@@ -1,6 +1,6 @@
 # Ethan's Anomaly Detection
 
-Ethan's Anomaly Detection is a small toolset that allows developers to detect abnormal changes in time series data. The service that runs this anomaly detection software is sin the cloud, meaning developers only need to download some small client code to get started.
+Ethan's Anomaly Detection is a small toolset that allows developers to detect abnormal changes in time series data. The service that runs this anomaly detection software is in the cloud, meaning developers only need to download some small client code to get started.
 
 
 ## Getting Started
