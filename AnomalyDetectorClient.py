@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class AnomalyDetectorClient:
     def __init__(self, type, **kwargs):
         self.type = type
-        self.ip = "data.ethansanomalydetection.com" if True else "localhost"
+        self.ip = "data.ethansanomalydetection.com" if False else "localhost"
         self.port = "80"
 
         self.detector_config = kwargs
